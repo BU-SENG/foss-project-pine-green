@@ -8,7 +8,7 @@ A modern, real-time campus news and bulletin management system designed to keep 
 
 
 - Real-time news and announcements
-- Personalized content feed
+- Personalized content feeds
 - Bookmark important updates
 - Category-based organization
 - Search functionality
