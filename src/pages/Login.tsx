@@ -33,24 +33,24 @@ export default function Login() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col justify-center p-4 pt-20 pb-12 sm:pt-4 relative overflow-hidden">
+    <div className="min-h-screen flex items-center justify-center p-4 relative overflow-hidden">
       <div className="absolute inset-0 gradient-hero opacity-20 -z-10" />
       
-      <div className="w-full max-w-md mx-auto">
-        <Link to="/" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-6 sm:mb-8 transition-smooth">
+      <div className="w-full max-w-md">
+        <Link to="/" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-smooth">
           <ArrowLeft className="h-4 w-4" />
           Back to home
         </Link>
 
-        <div className="glass rounded-2xl p-6 sm:p-8 shadow-lg animate-slide-up">
-          <div className="text-center mb-6 sm:mb-8">
+        <div className="glass rounded-2xl p-8 shadow-lg animate-slide-up">
+          <div className="text-center mb-8">
             <img 
               src="/CAMPUS-STREAM 1024X1024.png" 
               alt="CampusStream Logo" 
-              className="w-14 h-14 sm:w-16 sm:h-16 rounded-xl mx-auto mb-3 sm:mb-4 object-cover"
+              className="w-16 h-16 rounded-xl mx-auto mb-4 object-cover"
             />
-            <h1 className="text-2xl sm:text-3xl font-bold mb-2">Welcome Back</h1>
-            <p className="text-sm sm:text-base text-muted-foreground">Sign in to your account to continue</p>
+            <h1 className="text-3xl font-bold mb-2">Welcome Back</h1>
+            <p className="text-muted-foreground">Sign in to your account to continue</p>
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-6">
