@@ -2,7 +2,7 @@ import { Bell, Moon, Sun, Search, Menu, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Link, useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useAuth } from "@/contexts/AuthContext";
 import { useQuery } from "@tanstack/react-query";
 import { getUnreadCount } from "@/lib/api/notifications";
@@ -21,10 +21,27 @@ interface NavbarProps {
 }
 
 export function Navbar({ onToggleSidebar }: NavbarProps) {
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(() => {
+    // Check localStorage and system preference on initial load
+    const saved = localStorage.getItem('theme');
+    if (saved) return saved === 'dark';
+    return window.matchMedia('(prefers-color-scheme: dark)').matches;
+  });
   const [searchQuery, setSearchQuery] = useState("");
   const navigate = useNavigate();
   const { user, profile, signOut } = useAuth();
+
+  // Apply theme on mount and when isDark changes
+  useEffect(() => {
+    const root = document.documentElement;
+    if (isDark) {
+      root.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      root.classList.remove('dark');
+      localStorage.setItem('theme', 'light');
+    }
+  }, [isDark]);
 
   // Fetch unread notifications count
   const { data: unreadData } = useQuery({
@@ -38,7 +55,6 @@ export function Navbar({ onToggleSidebar }: NavbarProps) {
 
   const toggleTheme = () => {
     setIsDark(!isDark);
-    document.documentElement.classList.toggle("dark");
   };
 
   const handleSearch = (e: React.FormEvent) => {

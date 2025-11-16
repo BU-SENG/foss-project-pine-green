@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Navbar } from "@/components/Navbar";
 import { Sidebar } from "@/components/Sidebar";
 import { Button } from "@/components/ui/button";
@@ -25,6 +25,23 @@ export default function Profile() {
   const { profile: userProfile, signOut } = useAuth();
   const { toast } = useToast();
   const queryClient = useQueryClient();
+
+  // Dark mode state
+  const [isDarkMode, setIsDarkMode] = useState(() => {
+    const saved = localStorage.getItem('theme');
+    return saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches);
+  });
+
+  // Apply dark mode
+  useEffect(() => {
+    if (isDarkMode) {
+      document.documentElement.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+      localStorage.setItem('theme', 'light');
+    }
+  }, [isDarkMode]);
 
   // Form state
   const [formData, setFormData] = useState({
@@ -344,9 +361,8 @@ export default function Profile() {
                       </p>
                     </div>
                     <Switch
-                      onCheckedChange={(checked) => {
-                        document.documentElement.classList.toggle("dark", checked);
-                      }}
+                      checked={isDarkMode}
+                      onCheckedChange={setIsDarkMode}
                     />
                   </div>
                 </div>
