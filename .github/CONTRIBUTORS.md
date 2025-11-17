@@ -32,6 +32,13 @@ This file tracks individual contributions to the CampusStream project.
   - PWA service worker configuration
   - Authentication context implementation
 
+### @iraoyai1446-hash
+- **Role:** Frontend Developer
+- **Contributions:**
+  - Landing page component structure
+  - Form validation and error handling
+  - Accessibility improvements (ARIA labels)
+
 ---
 
 *Last updated: November 17, 2025*
