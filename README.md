@@ -12,8 +12,8 @@ A modern, real-time campus news and bulletin management system designed to keep 
 - Category-based organization
 - Search functionality
 - Notifications for new announcements
-- Admin dashboard for content management
-- Department-specific news sections
+- Admin dashboard for content managements
+- Department-specific news section
 
 ## Technologies
 
