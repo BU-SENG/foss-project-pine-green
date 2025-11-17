@@ -5,21 +5,12 @@ This file tracks individual contributions to the CampusStream project.
 ## Team Members
 
 ### @BISHOP-X (Project Lead)
-- **Role:** Full Stack Architect & Project Lead
+- **Role:** Project Lead & Lead Developer
 - **Major Contributions:**
-  - Complete system architecture and technical design
-  - Supabase backend integration (6 tables, RLS policies)
-  - Service layer implementation (855 lines - announcements, bookmarks, notifications, profile)
-  - PWA implementation with service worker and offline support
-  - Authentication system with role-based access control
-  - Dark mode with localStorage persistence and system preference detection
-  - Mobile responsiveness optimization (82→92 score)
-  - Admin panel with mobile card views
-  - React Query data fetching and caching strategy
-  - Glass morphism design system
-  - Deployment configuration (Vercel + Supabase)
-  - Git repository management and CI/CD
-  - Technical documentation and SRS
+  - Overall system architecture and technical design
+  - Lead developer overseeing project implementation
+  - Team coordination and code integration
+  - Repository management and deployment oversight
 
 ### @yasinex0
 - **Role:** Frontend Developer
