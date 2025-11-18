@@ -25,7 +25,10 @@ This project is built with:
 - **shadcn/ui** - Modern UI component library
 - **Tailwind CSS** - Utility-first CSS framework
 - **React Router** - Client-side routing
-- **React Query** - Data fetching and state management
+- **React Query** - Data fetching and state managements
+
+
+
 
 ## Prerequisites
 
