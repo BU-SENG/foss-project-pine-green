@@ -4,10 +4,11 @@
 
 A modern, real-time campus news and bulletin management system designed to keep students, faculty, and staff connected with important announcements and updates.
 
-## Features
+## Feature
+
 
 - Real-time news and announcements
-- Personalized content feed
+- Personalized content feeds
 - Bookmark important updates
 - Category-based organization
 - Search functionality
