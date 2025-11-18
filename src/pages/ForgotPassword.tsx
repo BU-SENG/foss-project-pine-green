@@ -34,7 +34,7 @@ export default function ForgotPassword() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center p-4 relative overflow-hidden">
+           <div className="min-h-screen flex items-center justify-center p-4 relative overflow-hidden">
       <div className="absolute inset-0 gradient-hero opacity-20 -z-10" />
       
       <div className="w-full max-w-md">
@@ -97,5 +97,6 @@ export default function ForgotPassword() {
         </div>
       </div>
     </div>
+
   );
 }

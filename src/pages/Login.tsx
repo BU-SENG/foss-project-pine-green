@@ -39,7 +39,7 @@ export default function Login() {
       <div className="w-full max-w-md">
         <Link to="/" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-smooth">
           <ArrowLeft className="h-4 w-4" />
-          Back to home
+          Back to home page
         </Link>
 
         <div className="glass rounded-2xl p-8 shadow-lg animate-slide-up">
