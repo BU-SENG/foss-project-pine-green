@@ -12,6 +12,8 @@ CampusStream is a **3-tier progressive web application** with:
 
 ### **Data Flow**
 ```
+
+
 User → React App → React Query Cache → Supabase Client SDK → 
 PostgreSQL (RLS) → Real-time Subscriptions → Live Updates
 ```
