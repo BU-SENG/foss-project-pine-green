@@ -86,6 +86,7 @@ src/
 
 ### For Administrators
 - Access the admin dashboard to create and manage announcements
+- Publishing Content
 - Categorize content by department or type
 - Schedule announcements for future publication
 - Monitor engagement and readership
