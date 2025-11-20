@@ -54,7 +54,56 @@ export interface UpdateAnnouncementData {
 /**
  * Fetch announcements with optional filters and pagination
  */
+export async function getAnnouncements(filters?: AnnouncementFilters) {
+  try {
+    let query = supabase
+      .from('announcements')
+      .select(`
+        *,
+        author:users!announcements_author_id_fkey(id, name, avatar)
+      `)
+      .eq('is_deleted', false)
+      .order('published_at', { ascending: false })
 
+    // Apply filters
+    if (filters?.category) {
+      query = query.eq('category', filters.category)
+    }
+
+    if (filters?.department) {
+      query = query.eq('department', filters.department)
+    }
+
+    if (filters?.priority) {
+      query = query.eq('priority', filters.priority)
+    }
+
+    // Full-text search
+    if (filters?.search) {
+      query = query.or(
+        `title.ilike.%${filters.search}%,excerpt.ilike.%${filters.search}%,content.ilike.%${filters.search}%`
+      )
+    }
+
+    // Pagination
+    if (filters?.limit) {
+      query = query.limit(filters.limit)
+    }
+
+    if (filters?.offset) {
+      query = query.range(filters.offset, filters.offset + (filters.limit || 10) - 1)
+    }
+
+    const { data, error } = await query
+
+    if (error) throw error
+
+    return { data: data as Announcement[], error: null }
+  } catch (error) {
+    console.error('Error fetching announcements:', error)
+    return { data: null, error }
+  }
+}
 
 
 
