@@ -6,7 +6,7 @@ CampusStream is a modern campus-wide Information Delivery platform that delivers
 
 ## Current Status
 
-- Deployed: campus-stream.vercel.app
+- Deployed: [campus-stream.vercel.app](https://campus-stream.vercel.app)
 - PWA: Installable, offline-ready
 
 
