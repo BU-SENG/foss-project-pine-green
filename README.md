@@ -14,7 +14,7 @@ CampusStream is a modern campus-wide Information Delivery platform that delivers
 ## Feature
 
 
-- Real-time news and announcements
+- Real-time news updates and announcements
 - Personalized content feeds
 - Bookmark important updates
 - Category-based organization
@@ -90,6 +90,7 @@ src/
 - Bookmark important announcements for later
 - Search for specific topics or keywords
 - Enable notifications to stay updated
+- Save important updates for future reference
 
 ### For Administrators
 - Access the admin dashboard to create and manage announcements
@@ -97,6 +98,7 @@ src/
 - Categorize content by department or type
 - Schedule announcements for future publication
 - Monitor engagement and readership
+
 
 ## License
 
