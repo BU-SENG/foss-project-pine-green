@@ -33,13 +33,20 @@ export interface Notification {
   relatedNewsId?: string;
 }
 
+export interface Category {
+  id: string;
+  name: string;
+  icon: string;
+  count: number;
+  color: string;
+}
 
-
-
-// here 
-
-
-
+export interface Department {
+  id: string;
+  name: string;
+  color: string;
+  newsCount: number;
+}
 
 
 // Mock Users
