@@ -1,6 +1,27 @@
 import { supabase } from '@/lib/supabase'
 
+export interface UserProfile {
+  id: string
+  email: string
+  name: string
+  first_name?: string
+  last_name?: string
+  role: 'student' | 'lecturer' | 'admin'
+  department: string
+  level?: string
+  avatar?: string
+  created_at: string
+  updated_at: string
+}
 
+export interface UpdateProfileData {
+  name?: string
+  first_name?: string
+  last_name?: string
+  department?: string
+  level?: string
+  avatar?: string
+}
 
 /**
  * Get user profile by ID
