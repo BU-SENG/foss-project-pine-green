@@ -8,7 +8,7 @@ CampusStream is a modern campus-wide Information Delivery platform that delivers
 ## Feature
 
 
-- Real-time news and announcements
+- Real-time news updates and announcements
 - Personalized content feeds
 - Bookmark important updates
 - Category-based organization
