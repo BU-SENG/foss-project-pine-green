@@ -33,20 +33,14 @@ export interface Notification {
   relatedNewsId?: string;
 }
 
-export interface Category {
-  id: string;
-  name: string;
-  icon: string;
-  count: number;
-  color: string;
-}
 
-export interface Department {
-  id: string;
-  name: string;
-  color: string;
-  newsCount: number;
-}
+
+
+// here 
+
+
+
+
 
 // Mock Users
 export const mockUsers: User[] = [
