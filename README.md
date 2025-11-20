@@ -84,6 +84,7 @@ src/
 - Bookmark important announcements for later
 - Search for specific topics or keywords
 - Enable notifications to stay updated
+- Save important updates for future reference
 
 ### For Administrators
 - Access the admin dashboard to create and manage announcements
