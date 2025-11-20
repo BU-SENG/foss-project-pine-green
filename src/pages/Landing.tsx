@@ -32,7 +32,8 @@ export default function Landing() {
       <nav className="glass border-b sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 gap-2">
-            <Link to="/" className="flex items-center gap-2 shrink-0">
+
+              <Link to="/" className="flex items-center gap-2 shrink-0">
               <img 
                 src="/CAMPUS-STREAM 1024X1024.png" 
                 alt="CampusStream Logo" 
@@ -40,7 +41,9 @@ export default function Landing() {
               />
               <span className="font-bold text-base sm:text-xl truncate">CampusStream</span>
             </Link>
-            <div className="flex items-center gap-2 sm:gap-3 shrink-0">
+
+
+          <div className="flex items-center gap-2 sm:gap-3 shrink-0">
               <Link to="/login">
                 <Button variant="ghost" size="sm" className="sm:h-10">Login</Button>
               </Link>

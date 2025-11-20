@@ -2,7 +2,8 @@
 
 # CampusStream - Smart Campus News & Bulletin System
 
-A modern, real-time campus news and bulletin management system designed to keep students, faculty, and staff connected with important announcements and updates.
+CampusStream is a modern campus-wide Information Delivery platform that delivers real-time news, announcements, and updates to students, lecturers, and faculty members. It unifies all campus information in one place, ensuring that everyone receives timely and organised updates.
+
 
 ## Feature
 
@@ -86,6 +87,7 @@ src/
 
 ### For Administrators
 - Access the admin dashboard to create and manage announcements
+- Publishing Content
 - Categorize content by department or type
 - Schedule announcements for future publication
 - Monitor engagement and readership
