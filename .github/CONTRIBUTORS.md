@@ -61,6 +61,13 @@ This file tracks individual contributions to the CampusStream project.
   - Environment variable setup
   - CI/CD pipeline optimization
 
+### @Demipeju
+- **Role:** UI/UX Designer
+- **Contributions:**
+  - Component styling and visual hierarchy
+  - Responsive design patterns implementation
+  - User interface consistency and polish
+
 ---
 
-*Last updated: November 17, 2025*
+*Last updated: November 19, 2025*

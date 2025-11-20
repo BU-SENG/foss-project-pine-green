@@ -48,6 +48,7 @@ export interface Department {
   newsCount: number;
 }
 
+
 // Mock Users
 export const mockUsers: User[] = [
   {
