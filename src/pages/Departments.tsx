@@ -74,12 +74,16 @@ export default function Departments() {
             </p>
           </div>
 
+          {error && (
+            <Alert variant="destructive" className="mb-6">
+              <AlertCircle className="h-4 w-4" />
+              <AlertDescription>
+                Failed to load department counts. Please try again later.
+              </AlertDescription>
+            </Alert>
+          )}
+
           
-
-
-
-          
-
           {isLoading ? (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {departments.map((dept, index) => (
