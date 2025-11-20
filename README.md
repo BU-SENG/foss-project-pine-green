@@ -4,9 +4,13 @@
 
 CampusStream is a modern campus-wide Information Delivery platform that delivers real-time news, announcements, and updates to students, lecturers, and faculty members. It unifies all campus information in one place, ensuring that everyone receives timely and organised updates.
 
+## Current Status
+
+- Deployed: campus-stream.vercel.app
+- PWA: Installable, offline-ready
+
 
 ## Feature
-
 
 - Real-time news updates and announcements
 - Personalized content feeds
